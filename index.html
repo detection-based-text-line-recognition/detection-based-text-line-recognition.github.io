@@ -8,10 +8,14 @@
     <style>
         /* General styles */
         code {
-            padding: 4px;
-            font-size: 0.8rem;
-            font-family: "mono";
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            font-size: 14px;
+            width: 100%;
             
+        }
+        pre {
+            border-radius: 50px;
         }
 
         /* pre {
@@ -56,6 +60,13 @@
             align-items: center;
             flex-direction: column;
             font-size: 18px;
+        }
+        .authors a {
+            color: inherit; /* Make the link color inherit from its parent */
+            text-decoration: none;
+        }
+        .authors a:hover {
+            text-decoration: underline; /* Optionally, add underline on hover for accessibility */
         }
 
         .content {
@@ -119,6 +130,20 @@
             color: #02A4D3;
         }
 
+        code, pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 14px;
+            white-space: pre-wrap; /* Allows long lines to wrap */
+            overflow-x: auto;      /* Adds horizontal scroll if needed */
+        }
+
+        pre {
+            margin: 20px 0;
+            border: 1px solid #ccc;
+        }
 
 
         .container h1 {
@@ -384,7 +409,7 @@
         </div> -->
 
         <div class="authors">
-            <b> Raphael Baena, Syrine Kalleli, Mathieu Aubry </b> 
+            <b> <a href="https://scholar.google.com/citations?user=8MU98WQAAAAJ&hl=en" target="_blank">Raphael Baena</a>, <a href="https://imagine-lab.enpc.fr/staff-members/syrine-kalleli/" target="_blank">Syrine Kalleli</a>, <a href="https://imagine.enpc.fr/~aubrym/" target="_blank">Mathieu Aubry</a> </b> 
         </div>
    
         <div class="affiliations">
@@ -409,14 +434,10 @@
 
             <a href="" target="_blank">
                 <div class="center-content">
-                <b> Pretrained Models </b>
+                <b> Presentation </b>
                 </div>
             </a>
-            <a href="" target="_blank">
-                <div class="center-content">
-                <b> Finetuned Models </b>
-                </div>
-            </a>
+
 
 
         </div>
@@ -544,21 +565,29 @@
             </div>
         </div>
         
-                <div class="abstract"
-                    style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-                    <h2>Acknowledgements</h2>
-                    <div class="para">
-                        <p>
-                            This work was funded by ANR project EIDA ANR-22-CE38-0014, ANR project VHS ANR-21-CE38-0008 and ANR project sharp ANR-23-PEIA-0008, in the context of the PEPR IA. R. Baena, S. Kalleli and M. Aubry, are supported by ERC project DISCOVER funded by
-                            the European Union’s Horizon Europe Research and Innovation program under grant agreement No. 101076028. We thank Ségolène Albouy, Zeynep Sonat Baltacı, Ioannis Siglidis, Elliot Vincent  and Malamatenia Vlachou for feedback and fruitful discussions.
-                        </p>
-                    </div>
-                </div>
-                <div class="abstract"
-                    style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-                    <h2>BibTeX</h2>
+       
+        <div class="abstract"
+            style="display: flex; margin-top: 40px;justify-content: center; flex-direction: column; align-items: center;">
+            
+            <h2>Acknowledgements</h2>
+            <hr class="blue-line">
+            <div class="para">
+                <p>
+                    This work was funded by ANR project EIDA ANR-22-CE38-0014, ANR project VHS ANR-21-CE38-0008, ANR project sharp ANR-23-PEIA-0008, in the context of the PEPR IA, and  ERC project DISCOVER funded by
+                    the European Union’s Horizon Europe Research and Innovation program under grant agreement No. 101076028. We thank Ségolène Albouy, Zeynep Sonat Baltacı, Ioannis Siglidis, Elliot Vincent  and Malamatenia Vlachou for feedback and fruitful discussions.
+                </p>
+            </div>
+        </div>
 
-                </div>
+        <div class="abstract"
+            style="display: flex; flex-direction: column;">
+            <h2>BibTeX</h2> 
+            <pre style="text-align: center;"> 
+                <p style="margin-top: -20px;margin-bottom: -30px; margin-left:  20px; margin-right:  20px;"> @misc{baena2024DTLR, title={General Detection-based Text Line Recognition, author={Raphael Baena and Syrine Kalleli and Mathieu Aubry}, year={2024}, eprint={}, archivePrefix={arXiv}, primaryClass={cs.CV}}
+                </p>
+                </pre>
+        </div>
+               
 
 
 </body>
